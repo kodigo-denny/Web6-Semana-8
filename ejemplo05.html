@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="pantalla">0</h1>
+    <button onclick="decrementar()">-</button>
+    <button onclick="reset()">Reset</button>
+    <button onclick="incrementar()">+</button>
+</body>
+</html>
+<script>
+    let pantalla = document.querySelector("#pantalla")
+
+    function decrementar(){
+        let num = Number(pantalla.innerText)
+        num--
+        pantalla.innerText = num
+    }
+
+    function reset(){
+        pantalla.innerText = "0"
+    }
+
+    function incrementar(){
+        let num = Number(pantalla.innerText)
+        num++
+        pantalla.innerText = num
+    }
+</script>

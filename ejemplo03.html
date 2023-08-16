@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="ejemplo03.js"></script>
+</head>
+<body onresize="cambioTamaño()" onerror="MensajeError()" onload="termino()">
+    
+        <input onfocus="foco()" onblur="noFoco()" type="text" id="txt1" />
+        <input onchange="cambio()" type="text" id="txt2" />
+        <input onkeydown="keydown()" onkeypress="keypress()" onkeyup="keyup()" type="text" id="txt3" />
+        <input onmousedown="mouseDown()" onmouseup="mouseUp()" type="text" id="txt4" />
+        <input onmouseover="mouseEntro()" onmouseout="mouseSale()" type="text" id="txt5" />
+        <input onselect="selecciono()" type="text" id="txt6" />
+        <h1 id="titulo"></h1>
+        <button onclick="presionoClick()" ondblclick="dobleClick()" >Click</button>
+
+    
+</body>
+</html>
+

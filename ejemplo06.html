@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="pantalla">0</h1>
+    <button onclick="cambiarValor(-1)">-</button>
+    <button onclick="cambiarValor(0)">Reset</button>
+    <button onclick="cambiarValor(1)">+</button>
+</body>
+</html>
+<script>
+    let pantalla = document.querySelector("#pantalla")
+
+    function cambiarValor(valor){
+        if(valor === 0)
+            pantalla.innerText = "0"
+        else{
+            let num = Number(pantalla.innerText)
+            num = num + valor
+            pantalla.innerText = num
+        }
+    }
+</script>

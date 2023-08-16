@@ -11,15 +11,15 @@
 const lista=document.querySelector('#lista')
 
 //hijos de la lista
-console.log(lista.children)
+//console.log(lista.children)
 
 //DOM TRAVERSING (HIJOS A PADRES)
 //usamos el parentElement  
 
-console.log(lista.parentElement.parentElement)
+//console.log(lista.parentElement.parentElement)
 
 //DOM TRAVERSING (ENTRE HERMANOS)
 
 //console.log(lista.previousSibling.previousSibling)
-//console.log(lista.nextSibling.nextSibling)
+console.log(lista.nextSibling.nextSibling)
 
