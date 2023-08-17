@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        console.log(window)
+    </script>
+</head>
+<body>
+    <input id="txtX" type="text" />
+    <input id="txtY" type="text" />
+    <input id="boton" type="text" />
+    <button id="btn01">Ejemplo 01</button>
+    <button id="btn02">Ejemplo 02</button>
+</body>
+</html>
+<script>
+    const btn01 = document.querySelector("#btn01")
+    const btn02 = document.querySelector("#btn02")
+    //const body = document.querySelector("body")
+
+    const txtX = document.querySelector("#txtX")
+    const txtY = document.querySelector("#txtY")
+    const boton = document.querySelector("#boton")
+
+    btn01.addEventListener('mouseup', (e) =>{
+        console.log("Realizo click sobre btn01")
+        console.log(e)
+    })
+
+    btn02.addEventListener("click", clickBtn02)
+
+    function clickBtn02(e){
+        console.log(e)
+        console.log("btn02")
+    }
+
+    window.addEventListener('mouseup', (e) =>{
+        //console.log(e)
+        txtX.value = e.x
+        txtY.value = e.y
+        boton.value = e.button
+    })
+
+    window.addEventListener('mousemove', (e) => {
+        //console.log(e)
+        txtX.value = e.x
+        txtY.value = e.y
+    })
+</script>
